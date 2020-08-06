@@ -6,10 +6,10 @@
   </div>
 </template>
 
-<script>
-import { ref } from "vue"; // <-- Use this line if you're in a Vue 3 app
+<script lang="ts">
+import { defineComponent, ref } from "vue";
 
-export default {
+export default defineComponent({
   setup() {
     const capacity = ref(3);
 
@@ -18,7 +18,7 @@ export default {
     }
     return { capacity, increaseCapacity };
   },
-};
+});
 </script>
 
 <style>
